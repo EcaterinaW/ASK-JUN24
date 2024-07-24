@@ -189,9 +189,9 @@
 							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
 							"\r",
-							"var jsonData = pm.response.json();\r",
-							"pm.environment.set(\"assignmentId\", jsonData[0].id);\r",
-							"pm.environment.set(\"assignmentGroupID\", jsonData[0].assignmentGroupID);\r",
+							"// var jsonData = pm.response.json();\r",
+							"// pm.environment.set(\"assignmentId\", jsonData[0].id);\r",
+							"// pm.environment.set(\"assignmentGroupID\", jsonData[0].assignmentGroupID);\r",
 							"\r",
 							"pm.test(\"Verify status, result and gradedBy values before submission\", function () {\r",
 							"    pm.expect(jsonData[0].status).to.eql(\"ASSIGNED\");\r",
@@ -219,7 +219,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"quizId\": {{quizId}},\r\n  \"userIds\": [{{studentId}}]\r\n}",
+					"raw": "{\r\n  \"quizId\": {{quizId}},\r\n  \"userIds\": [13944]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
